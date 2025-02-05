@@ -1,0 +1,16 @@
+{
+  "name": "@freedom/scripts",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/*.js",
+    "dist/*.ts"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@freedom/executor": "workspace:*"
+  }
+}

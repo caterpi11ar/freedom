@@ -1,0 +1,4 @@
+packages:
+  - "packages/*"
+  - "packages/**/__tests__/**"
+  - docs

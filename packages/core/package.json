@@ -1,0 +1,17 @@
+{
+  "name": "@freedom/core",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/*.js",
+    "dist/*.ts"
+  ],
+  "scripts": {
+    "postinstall": "npx puppeteer browsers install chrome",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "puppeteer": "^24.2.0"
+  }
+}
