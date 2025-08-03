@@ -10,11 +10,11 @@
   "scripts": {
     "build": "tsc"
   },
+  "peerDependencies": {
+    "puppeteer": "^24.2.0"
+  },
   "dependencies": {
     "@freedom/core": "workspace:*",
     "@freedom/executor": "workspace:*"
-  },
-  "devDependencies": {
-    "puppeteer": "^24.2.0"
   }
 }

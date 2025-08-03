@@ -11,7 +11,7 @@
     "postinstall": "npx puppeteer browsers install chrome",
     "build": "tsc"
   },
-  "devDependencies": {
+  "peerDependencies": {
     "puppeteer": "^24.2.0"
   }
 }

@@ -33,6 +33,9 @@ importers:
       lint-staged:
         specifier: ^15.5.2
         version: 15.5.2
+      puppeteer:
+        specifier: ^24.2.0
+        version: 24.2.0(typescript@5.9.2)
       rimraf:
         specifier: ^5.0.10
         version: 5.0.10
@@ -57,10 +60,9 @@ importers:
       '@freedom/core':
         specifier: workspace:*
         version: link:../core
-    devDependencies:
-      puppeteer:
-        specifier: ^24.2.0
-        version: 24.2.0(typescript@5.9.2)
+      '@freedom/executor':
+        specifier: workspace:*
+        version: 'link:'
 
   packages/scripts:
     dependencies:
