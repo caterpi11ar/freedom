@@ -11,6 +11,10 @@
     "build": "tsc"
   },
   "dependencies": {
+    "@freedom/core": "workspace:*",
     "@freedom/executor": "workspace:*"
+  },
+  "devDependencies": {
+    "puppeteer": "^24.2.0"
   }
 }

@@ -57,15 +57,23 @@ importers:
       '@freedom/core':
         specifier: workspace:*
         version: link:../core
-      '@freedom/executor':
-        specifier: workspace:*
-        version: 'link:'
+    devDependencies:
+      puppeteer:
+        specifier: ^24.2.0
+        version: 24.2.0(typescript@5.9.2)
 
   packages/scripts:
     dependencies:
+      '@freedom/core':
+        specifier: workspace:*
+        version: link:../core
       '@freedom/executor':
         specifier: workspace:*
         version: link:../executor
+    devDependencies:
+      puppeteer:
+        specifier: ^24.2.0
+        version: 24.2.0(typescript@5.9.2)
 
 packages:
 
