@@ -1,0 +1,17 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+ # 项目背景
+
+Freedom 是一个多模块的自动化游戏脚本库，旨在提供便捷的脚本编写和执行功能。通过编写脚本支持自动化云游戏操作，提供简单灵活的游戏行为控制方式。
+
+# 编码规范
+
+- 使用 TypeScript 和 React 书写
+- 避免引入新依赖，严控打包体积
+- 兼容现代浏览器
+- 支持服务端渲染
+- 保持向下兼容，避免 breaking change
+- 合理使用 React.memo、useMemo 和 useCallback 优化性能

@@ -1,0 +1,15 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# 合并后自动安装依赖（如果 package.json 有变化）
+changed_files="$(git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD)"
+
+check_run() {
+  if echo "$changed_files" | grep --quiet "$1"; then
+    echo "检测到 $1 变更，正在执行 $2"
+    eval "$2"
+  fi
+}
+
+# 如果 package.json 有变化，自动安装依赖
+check_run package.json "pnpm install"

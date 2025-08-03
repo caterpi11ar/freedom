@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 📚 项目文档
+    url: https://github.com/caterpi11ar/freedom/blob/main/README.md
+    about: 查看项目文档获取更多信息
+  - name: 💬 讨论区
+    url: https://github.com/caterpi11ar/freedom/discussions
+    about: 请在这里提问、分享想法或讨论项目相关话题
+  - name: 🤝 贡献指南
+    url: https://github.com/caterpi11ar/freedom/blob/main/.github/CONTRIBUTING.md
+    about: 了解如何为项目做出贡献
