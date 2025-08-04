@@ -1,5 +1,4 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
+#!/usr/bin/env sh
 
 # 检查提交信息是否符合规范
 pnpm commitlint --edit $1

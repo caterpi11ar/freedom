@@ -8,7 +8,8 @@
     "dist/*.ts"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "tsx src/index.ts"
   },
   "peerDependencies": {
     "puppeteer": "^24.2.0"
@@ -16,5 +17,8 @@
   "dependencies": {
     "@freedom/core": "workspace:*",
     "@freedom/executor": "workspace:*"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.3"
   }
 }

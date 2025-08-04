@@ -8,7 +8,7 @@ export const waitLoginAction: Action = {
   name: '等待登录页面',
   callback: async (context) => {
     const selector = '.wel-card__content--start'
-    const timeout = 5000
+    const timeout = 20000
     const element = await context.game.waitForSelector(selector, { timeout })
     return element
   },
@@ -27,7 +27,9 @@ export const firstBootAction: Action = {
       if (element)
         await element.click()
     }
-    catch {}
+    catch (error) {
+      console.error('首次启动失败', error)
+    }
   },
 }
 
@@ -44,7 +46,9 @@ export const networkSpeedTestAction: Action = {
       if (element)
         await element.click()
     }
-    catch {}
+    catch (error) {
+      console.error('网络测速失败', error)
+    }
   },
 }
 
