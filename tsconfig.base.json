@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "composite": true,
+    "target": "ES2022",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "moduleDetection": "force",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "paths": {
+      "@freedom/shared": ["./packages/shared/src/index.ts"],
+      "@freedom/logger": ["./packages/logger/src/index.ts"],
+      "@freedom/storage": ["./packages/storage/src/index.ts"],
+      "@freedom/executor": ["./packages/executor/src/index.ts"],
+      "@freedom/core": ["./packages/core/src/index.ts"],
+      "@freedom/webhook": ["./packages/webhook/src/index.ts"],
+      "@freedom/api": ["./packages/api/src/index.ts"],
+      "@freedom/cli": ["./packages/cli/src/index.ts"]
+    },
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true,
+    "noUncheckedSideEffectImports": true
+  }
+}

@@ -2,6 +2,19 @@
   "type": "module",
   "private": true,
   "description": "一个云原神自动化工具，基于 Puppeteer 实现自动化操作，支持游戏脚本执行功能，提升游戏体验和自动化效率。",
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/your-username/freedom#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/freedom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/freedom/issues"
+  },
   "keywords": [
     "genshin",
     "genshin-impact",
@@ -24,13 +37,14 @@
     "preinstall": "npx only-allow pnpm",
     "dev": "pnpm -r --parallel --filter='./packages/*' run dev",
     "build": "pnpm -r --filter='./packages/*' run build",
-    "fix": "eslint ./packages/**/*.{js,jsx,ts,tsx,mjs,cjs} --fix",
-    "lint": "eslint .",
+    "lint:fix": "eslint ./packages/**/*.{js,jsx,ts,tsx,mjs,cjs} --fix",
     "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:ci": "vitest run",
     "prepare": "husky"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^5.1.0",
+    "@antfu/eslint-config": "^5.3.0",
     "@commitlint/cli": "^18.6.1",
     "@commitlint/config-conventional": "^18.6.3",
     "@types/node": "22.13.0",
@@ -46,20 +60,13 @@
   "workspaces": [
     "packages/*"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "pnpm": {
     "overrides": {
       "@types/node": "22.13.0",
       "typescript": "^5.3.3"
     }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,mjs,cjs}": [
-      "eslint --fix"
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
   }
 }
