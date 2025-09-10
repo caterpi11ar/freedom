@@ -101,8 +101,6 @@ describe('configuration Defaults', () => {
     })
 
     it('should include Windows-specific paths on Windows', () => {
-      const _originalPlatform = process.platform
-
       // All paths should be valid regardless of platform
       CONFIG_PATHS.global.forEach((path) => {
         expect(typeof path).toBe('string')

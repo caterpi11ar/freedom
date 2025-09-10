@@ -274,5 +274,5 @@ export function reloadConfig(): void {
 }
 
 export function getAllConfigValues(): Record<string, unknown> {
-  return configManager.getConfig() as Record<string, unknown>
+  return configManager.getConfig() as unknown as Record<string, unknown>
 }

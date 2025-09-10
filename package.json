@@ -38,11 +38,7 @@
     "dev": "pnpm -C packages/cli run dev",
     "dev:core": "pnpm --filter='@freedom/core' run dev",
     "dev:all": "pnpm -r --parallel --filter='./packages/*' run dev",
-    "build": "node scripts/build.js",
-    "bundle": "node scripts/bundle.js",
-    "build:packages": "pnpm -r --filter='@freedom/*' run build",
-    "build:watch": "node esbuild.config.js --watch",
-    "lint": "eslint ./packages/**/*.{js,jsx,ts,tsx,mjs,cjs}",
+    "lint": "eslint packages --ext .ts,.tsx,.js,.jsx",
     "lint:fix": "eslint packages --fix",
     "typecheck": "tsc --noEmit",
     "test": "vitest",
@@ -77,7 +73,7 @@
   "pnpm": {
     "overrides": {
       "@types/node": "22.13.0",
-      "typescript": "^5.3.3"
+      "typescript": "^5.9.2"
     }
   }
 }

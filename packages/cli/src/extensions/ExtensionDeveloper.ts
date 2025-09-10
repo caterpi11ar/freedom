@@ -25,11 +25,9 @@ export interface ExtensionDevOptions {
 }
 
 export class ExtensionDeveloper {
-  private templatesDir: string
   private outputDir: string
 
   constructor() {
-    this.templatesDir = path.join(__dirname, '..', 'templates', 'extensions')
     this.outputDir = path.join(process.cwd(), 'extensions')
   }
 
@@ -124,7 +122,8 @@ export class ExtensionDeveloper {
       manifest.dependencies = {
         '@freedom/shared': '^0.1.0',
       }
-      manifest.devDependencies = {
+      manifest.dependencies = {
+        ...manifest.dependencies,
         'typescript': '^5.0.0',
         '@types/node': '^20.0.0',
       }

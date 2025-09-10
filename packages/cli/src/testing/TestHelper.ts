@@ -332,18 +332,23 @@ export class TestHelper {
       config: {
         game: {
           url: 'https://ys.mihoyo.com/cloud/',
-          region: 'asia',
-          headless: false,
+          region: 'cn',
+          language: 'zh-CN',
+          autoLogin: false,
         },
         automation: {
+          headless: false,
+          slowMo: 100,
           timeout: 30000,
-          retry: { count: 3, delay: 1000 },
-          screenshots: true,
+          retryAttempts: 3,
+          enableScreenshots: true,
+          screenshotPath: './screenshots',
         },
         logging: {
           level: 'debug',
-          console: true,
-          file: true,
+          maxSize: '10MB',
+          maxFiles: 5,
+          enableConsole: true,
         },
       },
       fixtures: [],
@@ -357,21 +362,29 @@ export class TestHelper {
       config: {
         game: {
           url: 'http://localhost:3000/mock-game',
-          region: 'test',
-          headless: true,
+          region: 'cn',
+          language: 'zh-CN',
+          autoLogin: false,
         },
         automation: {
+          headless: true,
+          slowMo: 0,
           timeout: 10000,
-          retry: { count: 1, delay: 100 },
-          screenshots: false,
+          retryAttempts: 1,
+          enableScreenshots: false,
+          screenshotPath: './screenshots',
         },
         logging: {
           level: 'warn',
-          console: false,
-          file: true,
+          maxSize: '10MB',
+          maxFiles: 5,
+          enableConsole: false,
         },
       },
-      fixtures: ['basic-config', 'mock-responses'],
+      fixtures: [
+        { name: 'basic-config', type: 'config', content: {} },
+        { name: 'mock-responses', type: 'mock', content: {} },
+      ],
       setup: ['start-mock-server', 'clear-cache'],
       teardown: ['stop-mock-server', 'cleanup-logs'],
       isolated: true,
@@ -416,14 +429,13 @@ export class TestHelper {
     await writeFile(configPath, JSON.stringify(environment.config, null, 2))
 
     // 设置fixtures
-    for (const fixtureName of environment.fixtures) {
+    for (const fixture of environment.fixtures) {
       try {
-        const fixture = await this.loadFixture(fixtureName)
         const fixturePath = path.join(sessionDir, `${fixture.name}.json`)
         await writeFile(fixturePath, JSON.stringify(fixture.content, null, 2))
       }
       catch (error) {
-        console.log(chalk.yellow(`⚠️  Failed to load fixture ${fixtureName}: ${error instanceof Error ? error.message : 'Unknown error'}`))
+        console.log(chalk.yellow(`⚠️  Failed to load fixture ${fixture.name}: ${error instanceof Error ? error.message : 'Unknown error'}`))
       }
     }
 

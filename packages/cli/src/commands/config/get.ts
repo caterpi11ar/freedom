@@ -32,7 +32,7 @@ export const getCommand: CommandModule = {
     try {
       console.log(chalk.blue(`🔍 Getting configuration value for: ${chalk.cyan(argv.key)}`))
 
-      const value = getConfigValue(argv.key)
+      const value = getConfigValue(argv.key as any)
 
       if (value === undefined) {
         throw new ConfigurationError(`Configuration key "${argv.key}" not found`)
@@ -41,7 +41,7 @@ export const getCommand: CommandModule = {
       console.log()
 
       if (argv.format === 'json') {
-        console.log(JSON.stringify({ [argv.key]: value }, null, 2))
+        console.log(JSON.stringify({ [argv.key as string]: value }, null, 2))
       }
       else if (argv.format === 'yaml') {
         console.log(`${argv.key}: ${JSON.stringify(value)}`)

@@ -154,25 +154,30 @@ export class ExtensionLoader {
       const fileUrl = pathToFileURL(filePath).href
       const module = await import(fileUrl)
 
+      let resolvedManifest: ExtensionManifest
       if (!manifest) {
         // 尝试从同目录查找 package.json
         const packagePath = path.join(path.dirname(filePath), 'package.json')
         try {
           const packageContent = await readFile(packagePath, 'utf-8')
-          manifest = JSON.parse(packageContent)
+          const parsedManifest = JSON.parse(packageContent) as ExtensionManifest
+          resolvedManifest = parsedManifest
         }
         catch {
           // 使用默认 manifest
-          manifest = {
+          resolvedManifest = {
             name: path.basename(filePath, path.extname(filePath)),
             version: '1.0.0',
             main: path.basename(filePath),
           }
         }
       }
+      else {
+        resolvedManifest = manifest
+      }
 
       const extension: LoadedExtension = {
-        manifest,
+        manifest: resolvedManifest,
         module,
         path: filePath,
         loaded: true,
@@ -180,15 +185,16 @@ export class ExtensionLoader {
         error: undefined,
       }
 
-      this.extensions.set(manifest.name, extension)
-      this.context.logger.info(`📦 Loaded extension: ${chalk.cyan(manifest.name)} v${manifest.version}`)
+      this.extensions.set(resolvedManifest.name, extension)
+      this.context.logger.info(`📦 Loaded extension: ${chalk.cyan(resolvedManifest.name)} v${resolvedManifest.version}`)
 
       return extension
     }
     catch (error) {
       const loadError = error instanceof Error ? error : new Error('Unknown error')
+      const failedManifest = manifest || { name: 'unknown', version: '0.0.0', main: '' }
       const failedExtension: LoadedExtension = {
-        manifest: manifest || { name: 'unknown', version: '0.0.0', main: '' },
+        manifest: failedManifest,
         module: null,
         path: filePath,
         loaded: false,

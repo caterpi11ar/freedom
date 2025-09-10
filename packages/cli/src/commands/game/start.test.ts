@@ -50,7 +50,7 @@ describe('game Start Command', () => {
       }
 
       const builder = startCommand.builder as (yargs: any) => any
-      const _result = builder(mockYargs)
+      builder(mockYargs)
 
       expect(mockYargs.positional).toHaveBeenCalledWith('profile', {
         describe: 'Game profile to use',
@@ -93,9 +93,11 @@ describe('game Start Command', () => {
         url: 'https://ys.mihoyo.com/cloud/',
         region: 'cn',
         timeout: 30000,
+        _: [],
+        $0: 'freedom',
       }
 
-      await startCommand.handler!(argv)
+      await startCommand.handler!(argv as any)
 
       expect(mockConsoleLog).toHaveBeenCalledWith(
         expect.stringContaining('Starting game automation session'),
@@ -115,9 +117,11 @@ describe('game Start Command', () => {
         url: 'https://custom.example.com',
         region: 'global',
         timeout: 60000,
+        _: [],
+        $0: 'freedom',
       }
 
-      await startCommand.handler!(argv)
+      await startCommand.handler!(argv as any)
 
       expect(mockConsoleLog).toHaveBeenCalledWith(
         expect.stringContaining('Profile: test-profile'),
@@ -140,9 +144,11 @@ describe('game Start Command', () => {
         url: 'https://ys.mihoyo.com/cloud/',
         region: 'cn',
         timeout: 30000,
+        _: [],
+        $0: 'freedom',
       }
 
-      await startCommand.handler!(argv)
+      await startCommand.handler!(argv as any)
 
       expect(mockConsoleLog).toHaveBeenCalledWith(
         expect.stringContaining('Game automation core not yet implemented'),
@@ -161,9 +167,11 @@ describe('game Start Command', () => {
         url: 'https://ys.mihoyo.com/cloud/',
         region: 'cn',
         timeout: 30000,
+        _: [],
+        $0: 'freedom',
       }
 
-      await expect(startCommand.handler!(argv)).rejects.toThrow(
+      await expect(startCommand.handler!(argv as any)).rejects.toThrow(
         expect.objectContaining({
           name: 'GameAutomationError',
           message: expect.stringContaining('Failed to start game session'),
@@ -183,9 +191,11 @@ describe('game Start Command', () => {
         url: 'https://ys.mihoyo.com/cloud/',
         region: 'cn',
         timeout: 30000,
+        _: [],
+        $0: 'freedom',
       }
 
-      await expect(startCommand.handler!(argv)).rejects.toThrow(
+      await expect(startCommand.handler!(argv as any)).rejects.toThrow(
         expect.objectContaining({
           name: 'GameAutomationError',
           message: 'Failed to start game session: Unknown error',

@@ -69,7 +69,7 @@ export const installCommand: CommandModule = {
 
       // 创建扩展管理器上下文
       const context: ExtensionContext = {
-        config: getAllConfigValues(),
+        config: getAllConfigValues() as any,
         logger: {
           info: (message: string) => console.log(chalk.blue('ℹ️ '), message),
           warn: (message: string) => console.log(chalk.yellow('⚠️ '), message),
@@ -99,8 +99,8 @@ export const installCommand: CommandModule = {
 
       const installation = await extensionManager.installExtension(extensionName, {
         source: sourceType,
-        version: argv.version,
-        force: argv.force,
+        version: argv.version as string | undefined,
+        force: argv.force as boolean | undefined,
       })
 
       if (argv.enable) {

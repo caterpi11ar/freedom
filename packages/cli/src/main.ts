@@ -8,19 +8,66 @@ import { debugCommand } from './commands/debug.js'
 import { extensionCommand } from './commands/extension.js'
 import { gameCommand } from './commands/game.js'
 import { scriptCommand } from './commands/script.js'
-import { InteractiveMode } from './interactive.js'
 
 function displayLogo(): void {
-  console.log(chalk.cyan.bold(`
- ███████╗██████╗ ███████╗███████╗██████╗  ██████╗ ███╗   ███╗
- ██╔════╝██╔══██╗██╔════╝██╔════╝██╔══██╗██╔═══██╗████╗ ████║
- █████╗  ██████╔╝█████╗  █████╗  ██║  ██║██║   ██║██╔████╔██║
- ██╔══╝  ██╔══██╗██╔══╝  ██╔══╝  ██║  ██║██║   ██║██║╚██╔╝██║
- ██║     ██║  ██║███████╗███████╗██████╔╝╚██████╔╝██║ ╚═╝ ██║
- ╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝╚═════╝  ╚═════╝ ╚═╝     ╚═╝
-  `))
-  console.log(chalk.yellow('🎮 Freedom - Genshin Impact Automation Tool'))
-  console.log(chalk.gray(`Version: ${process.env.CLI_VERSION || '0.1.0'}\n`))
+  // 创建渐变色的 FREEDOM logo - 科技感蓝紫青渐变
+  const logoLines = [
+    ' ███████╗██████╗ ███████╗███████╗██████╗  ██████╗ ███╗   ███╗',
+    ' ██╔════╝██╔══██╗██╔════╝██╔════╝██╔══██╗██╔═══██╗████╗ ████║',
+    ' █████╗  ██████╔╝█████╗  █████╗  ██║  ██║██║   ██║██╔████╔██║',
+    ' ██╔══╝  ██╔══██╗██╔══╝  ██╔══╝  ██║  ██║██║   ██║██║╚██╔╝██║',
+    ' ██║     ██║  ██║███████╗███████╗██████╔╝╚██████╔╝██║ ╚═╝ ██║',
+    ' ╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝╚═════╝  ╚═════╝ ╚═╝     ╚═╝',
+  ]
+
+  // 更精细的字符级渐变色配置
+  function createGradientLine(line: string, startColor: [number, number, number], endColor: [number, number, number]): string {
+    const chars = line.split('')
+    const gradientLine = chars.map((char, index) => {
+      if (char === ' ')
+        return char
+
+      const progress = index / (chars.length - 1)
+      const r = Math.round(startColor[0] + (endColor[0] - startColor[0]) * progress)
+      const g = Math.round(startColor[1] + (endColor[1] - startColor[1]) * progress)
+      const b = Math.round(startColor[2] + (endColor[2] - startColor[2]) * progress)
+
+      return chalk.rgb(r, g, b).bold(char)
+    }).join('')
+
+    return gradientLine
+  }
+
+  // 科技感装饰边框
+  console.log()
+  console.log(chalk.rgb(0, 200, 255)(`┌${'─'.repeat(60)}┐`))
+
+  // 每行使用不同的渐变色
+  const colorPairs = [
+    [[0, 150, 255], [100, 200, 255]], // 蓝色渐变
+    [[50, 180, 255], [150, 150, 255]], // 蓝紫渐变
+    [[100, 200, 255], [200, 100, 255]], // 蓝紫渐变
+    [[150, 150, 255], [255, 100, 200]], // 紫粉渐变
+    [[200, 100, 255], [100, 255, 200]], // 紫青渐变
+    [[100, 255, 200], [0, 255, 255]], // 青色渐变
+  ]
+
+  logoLines.forEach((line, index) => {
+    const [startColor, endColor] = colorPairs[index] as [[number, number, number], [number, number, number]]
+    const gradientLine = createGradientLine(line, startColor, endColor)
+    console.log(chalk.rgb(0, 200, 255)('│') + gradientLine + chalk.rgb(0, 200, 255)(' │'))
+  })
+
+  console.log(chalk.rgb(0, 200, 255)(`└${'─'.repeat(60)}┘`))
+
+  // 科技感标题和版本信息
+  console.log()
+  const title = '🎮 Freedom - Genshin Impact Automation Tool'
+  const titleGradient = createGradientLine(title, [0, 255, 255], [255, 100, 255])
+  console.log(`  ${titleGradient}`)
+
+  console.log(`  ${chalk.rgb(100, 100, 150)(`⚡ Version: ${process.env.CLI_VERSION || '0.1.0'} `)}${chalk.rgb(0, 255, 200)('• ')}${chalk.rgb(80, 80, 120)('Ready for automation')}`)
+  console.log()
 }
 
 export async function main(): Promise<void> {
@@ -28,15 +75,7 @@ export async function main(): Promise<void> {
 
   const args = hideBin(process.argv)
 
-  // 如果没有参数，进入交互式模式
-  if (args.length === 0) {
-    console.log(chalk.blue('💡 进入交互式模式...'))
-    console.log(chalk.gray('输入 /help 查看可用命令\n'))
-
-    const interactive = new InteractiveMode()
-    await interactive.start()
-    return
-  }
+  // 移除交互式模式，直接处理命令行参数
 
   // 使用 yargs 处理命令
   const cli = yargs(args)

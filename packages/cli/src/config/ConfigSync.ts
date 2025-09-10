@@ -363,13 +363,13 @@ export class ConfigSync {
   /**
    * Git同步实现（模拟）
    */
-  private async syncToGit(profile: SyncProfile, config: any, changes: string[]): Promise<void> {
+  private async syncToGit(_profile: SyncProfile, _config: any, changes: string[]): Promise<void> {
     // TODO: 实现Git同步
     console.log(chalk.yellow('⚠️  Git sync not yet implemented'))
     changes.push('Git sync placeholder')
   }
 
-  private async syncFromGit(profile: SyncProfile, changes: string[]): Promise<any> {
+  private async syncFromGit(_profile: SyncProfile, changes: string[]): Promise<any> {
     // TODO: 实现Git同步
     console.log(chalk.yellow('⚠️  Git sync not yet implemented'))
     changes.push('Git sync placeholder')
@@ -379,13 +379,13 @@ export class ConfigSync {
   /**
    * 云同步实现（模拟）
    */
-  private async syncToCloud(profile: SyncProfile, config: any, changes: string[]): Promise<void> {
+  private async syncToCloud(_profile: SyncProfile, _config: any, changes: string[]): Promise<void> {
     // TODO: 实现云同步
     console.log(chalk.yellow('⚠️  Cloud sync not yet implemented'))
     changes.push('Cloud sync placeholder')
   }
 
-  private async syncFromCloud(profile: SyncProfile, changes: string[]): Promise<any> {
+  private async syncFromCloud(_profile: SyncProfile, changes: string[]): Promise<any> {
     // TODO: 实现云同步
     console.log(chalk.yellow('⚠️  Cloud sync not yet implemented'))
     changes.push('Cloud sync placeholder')
@@ -426,7 +426,7 @@ export class ConfigSync {
   /**
    * 解决配置冲突
    */
-  private resolveConflicts(localConfig: any, remoteConfig: any, conflicts: ConfigConflict[]): any {
+  private resolveConflicts(_localConfig: any, remoteConfig: any, conflicts: ConfigConflict[]): any {
     const resolved = { ...remoteConfig }
 
     // 简单的冲突解决策略：优先使用更新的值

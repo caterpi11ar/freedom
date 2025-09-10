@@ -1,0 +1,2002 @@
+{
+  "inputs": {
+    "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/vendor/ansi-styles/index.js": {
+      "bytes": 5256,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/vendor/supports-color/index.js": {
+      "bytes": 3965,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:os",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:tty",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/utilities.js": {
+      "bytes": 997,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js": {
+      "bytes": 5902,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/vendor/ansi-styles/index.js",
+          "kind": "import-statement",
+          "original": "#ansi-styles"
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/vendor/supports-color/index.js",
+          "kind": "import-statement",
+          "original": "#supports-color"
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/utilities.js",
+          "kind": "import-statement",
+          "original": "./utilities.js"
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/vendor/ansi-styles/index.js",
+          "kind": "import-statement",
+          "original": "./vendor/ansi-styles/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/cliui@8.0.1/node_modules/cliui/build/lib/index.js": {
+      "bytes": 9667,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/cliui@8.0.1/node_modules/cliui/build/lib/string-utils.js": {
+      "bytes": 1011,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/cliui@8.0.1/node_modules/cliui/index.mjs": {
+      "bytes": 309,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/cliui@8.0.1/node_modules/cliui/build/lib/index.js",
+          "kind": "import-statement",
+          "original": "./build/lib/index.js"
+        },
+        {
+          "path": "node_modules/.pnpm/cliui@8.0.1/node_modules/cliui/build/lib/string-utils.js",
+          "kind": "import-statement",
+          "original": "./build/lib/string-utils.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/escalade@3.2.0/node_modules/escalade/sync/index.mjs": {
+      "bytes": 404,
+      "imports": [
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/string-utils.js": {
+      "bytes": 2084,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/tokenize-arg-string.js": {
+      "bytes": 1092,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/yargs-parser-types.js": {
+      "bytes": 425,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/yargs-parser.js": {
+      "bytes": 46827,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/tokenize-arg-string.js",
+          "kind": "import-statement",
+          "original": "./tokenize-arg-string.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/yargs-parser-types.js",
+          "kind": "import-statement",
+          "original": "./yargs-parser-types.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/string-utils.js",
+          "kind": "import-statement",
+          "original": "./string-utils.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/index.js": {
+      "bytes": 2508,
+      "imports": [
+        {
+          "path": "util",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/string-utils.js",
+          "kind": "import-statement",
+          "original": "./string-utils.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/yargs-parser.js",
+          "kind": "import-statement",
+          "original": "./yargs-parser.js"
+        },
+        {
+          "path": "fs",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/process-argv.js": {
+      "bytes": 436,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/yerror.js": {
+      "bytes": 234,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/y18n@5.0.8/node_modules/y18n/build/lib/platform-shims/node.js": {
+      "bytes": 377,
+      "imports": [
+        {
+          "path": "fs",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "util",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/y18n@5.0.8/node_modules/y18n/build/lib/index.js": {
+      "bytes": 6268,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/y18n@5.0.8/node_modules/y18n/index.mjs": {
+      "bytes": 183,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/y18n@5.0.8/node_modules/y18n/build/lib/platform-shims/node.js",
+          "kind": "import-statement",
+          "original": "./build/lib/platform-shims/node.js"
+        },
+        {
+          "path": "node_modules/.pnpm/y18n@5.0.8/node_modules/y18n/build/lib/index.js",
+          "kind": "import-statement",
+          "original": "./build/lib/index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/lib/platform-shims/esm.mjs": {
+      "bytes": 1876,
+      "imports": [
+        {
+          "path": "assert",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/cliui@8.0.1/node_modules/cliui/index.mjs",
+          "kind": "import-statement",
+          "original": "cliui"
+        },
+        {
+          "path": "node_modules/.pnpm/escalade@3.2.0/node_modules/escalade/sync/index.mjs",
+          "kind": "import-statement",
+          "original": "escalade/sync"
+        },
+        {
+          "path": "util",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "url",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/index.js",
+          "kind": "import-statement",
+          "original": "yargs-parser"
+        },
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/process-argv.js",
+          "kind": "import-statement",
+          "original": "../../build/lib/utils/process-argv.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/yerror.js",
+          "kind": "import-statement",
+          "original": "../../build/lib/yerror.js"
+        },
+        {
+          "path": "node_modules/.pnpm/y18n@5.0.8/node_modules/y18n/index.mjs",
+          "kind": "import-statement",
+          "original": "y18n"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/typings/common-types.js": {
+      "bytes": 308,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/is-promise.js": {
+      "bytes": 155,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/parse-command.js": {
+      "bytes": 1060,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/argsert.js": {
+      "bytes": 2477,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/yerror.js",
+          "kind": "import-statement",
+          "original": "./yerror.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/parse-command.js",
+          "kind": "import-statement",
+          "original": "./parse-command.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/middleware.js": {
+      "bytes": 3221,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/argsert.js",
+          "kind": "import-statement",
+          "original": "./argsert.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/is-promise.js",
+          "kind": "import-statement",
+          "original": "./utils/is-promise.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/maybe-async-result.js": {
+      "bytes": 496,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/is-promise.js",
+          "kind": "import-statement",
+          "original": "./is-promise.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/which-module.js": {
+      "bytes": 321,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/command.js": {
+      "bytes": 19368,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/typings/common-types.js",
+          "kind": "import-statement",
+          "original": "./typings/common-types.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/is-promise.js",
+          "kind": "import-statement",
+          "original": "./utils/is-promise.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/middleware.js",
+          "kind": "import-statement",
+          "original": "./middleware.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/parse-command.js",
+          "kind": "import-statement",
+          "original": "./parse-command.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/yargs-factory.js",
+          "kind": "import-statement",
+          "original": "./yargs-factory.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/maybe-async-result.js",
+          "kind": "import-statement",
+          "original": "./utils/maybe-async-result.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/which-module.js",
+          "kind": "import-statement",
+          "original": "./utils/which-module.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/obj-filter.js": {
+      "bytes": 299,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/typings/common-types.js",
+          "kind": "import-statement",
+          "original": "../typings/common-types.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/set-blocking.js": {
+      "bytes": 386,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/usage.js": {
+      "bytes": 21402,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/obj-filter.js",
+          "kind": "import-statement",
+          "original": "./utils/obj-filter.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/yerror.js",
+          "kind": "import-statement",
+          "original": "./yerror.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/set-blocking.js",
+          "kind": "import-statement",
+          "original": "./utils/set-blocking.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/completion-templates.js": {
+      "bytes": 1452,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/completion.js": {
+      "bytes": 10495,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/command.js",
+          "kind": "import-statement",
+          "original": "./command.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/typings/common-types.js",
+          "kind": "import-statement",
+          "original": "./typings/common-types.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/completion-templates.js",
+          "kind": "import-statement",
+          "original": "./completion-templates.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/is-promise.js",
+          "kind": "import-statement",
+          "original": "./utils/is-promise.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/parse-command.js",
+          "kind": "import-statement",
+          "original": "./parse-command.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/levenshtein.js": {
+      "bytes": 1031,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/validation.js": {
+      "bytes": 12653,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/argsert.js",
+          "kind": "import-statement",
+          "original": "./argsert.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/typings/common-types.js",
+          "kind": "import-statement",
+          "original": "./typings/common-types.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/levenshtein.js",
+          "kind": "import-statement",
+          "original": "./utils/levenshtein.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/obj-filter.js",
+          "kind": "import-statement",
+          "original": "./utils/obj-filter.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/apply-extends.js": {
+      "bytes": 2049,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/yerror.js",
+          "kind": "import-statement",
+          "original": "../yerror.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/yargs-factory.js": {
+      "bytes": 77635,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/command.js",
+          "kind": "import-statement",
+          "original": "./command.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/typings/common-types.js",
+          "kind": "import-statement",
+          "original": "./typings/common-types.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/yerror.js",
+          "kind": "import-statement",
+          "original": "./yerror.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/usage.js",
+          "kind": "import-statement",
+          "original": "./usage.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/argsert.js",
+          "kind": "import-statement",
+          "original": "./argsert.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/completion.js",
+          "kind": "import-statement",
+          "original": "./completion.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/validation.js",
+          "kind": "import-statement",
+          "original": "./validation.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/obj-filter.js",
+          "kind": "import-statement",
+          "original": "./utils/obj-filter.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/apply-extends.js",
+          "kind": "import-statement",
+          "original": "./utils/apply-extends.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/middleware.js",
+          "kind": "import-statement",
+          "original": "./middleware.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/is-promise.js",
+          "kind": "import-statement",
+          "original": "./utils/is-promise.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/maybe-async-result.js",
+          "kind": "import-statement",
+          "original": "./utils/maybe-async-result.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/set-blocking.js",
+          "kind": "import-statement",
+          "original": "./utils/set-blocking.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/index.mjs": {
+      "bytes": 231,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/lib/platform-shims/esm.mjs",
+          "kind": "import-statement",
+          "original": "./lib/platform-shims/esm.mjs"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/yargs-factory.js",
+          "kind": "import-statement",
+          "original": "./build/lib/yargs-factory.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/helpers/helpers.mjs": {
+      "bytes": 384,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/apply-extends.js",
+          "kind": "import-statement",
+          "original": "../build/lib/utils/apply-extends.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/process-argv.js",
+          "kind": "import-statement",
+          "original": "../build/lib/utils/process-argv.js"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/index.js",
+          "kind": "import-statement",
+          "original": "yargs-parser"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/lib/platform-shims/esm.mjs",
+          "kind": "import-statement",
+          "original": "../lib/platform-shims/esm.mjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/utils/errors.ts": {
+      "bytes": 1417,
+      "imports": [],
+      "format": "esm"
+    },
+    "packages/cli/src/config/defaults.ts": {
+      "bytes": 1977,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/config/validation.ts": {
+      "bytes": 4088,
+      "imports": [],
+      "format": "esm"
+    },
+    "packages/cli/src/config/config.ts": {
+      "bytes": 7459,
+      "imports": [
+        {
+          "path": "node:fs",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:os",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../utils/errors.js"
+        },
+        {
+          "path": "packages/cli/src/config/defaults.ts",
+          "kind": "import-statement",
+          "original": "./defaults.js"
+        },
+        {
+          "path": "packages/cli/src/config/validation.ts",
+          "kind": "import-statement",
+          "original": "./validation.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/config/get.ts": {
+      "bytes": 2013,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/config/config.ts",
+          "kind": "import-statement",
+          "original": "../../config/config.js"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../../utils/errors.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/config/list.ts": {
+      "bytes": 2878,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/config/config.ts",
+          "kind": "import-statement",
+          "original": "../../config/config.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/config/reset.ts": {
+      "bytes": 3256,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../../utils/errors.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/config/set.ts": {
+      "bytes": 2819,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../../utils/errors.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/config.ts": {
+      "bytes": 717,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/commands/config/get.ts",
+          "kind": "import-statement",
+          "original": "./config/get.js"
+        },
+        {
+          "path": "packages/cli/src/commands/config/list.ts",
+          "kind": "import-statement",
+          "original": "./config/list.js"
+        },
+        {
+          "path": "packages/cli/src/commands/config/reset.ts",
+          "kind": "import-statement",
+          "original": "./config/reset.js"
+        },
+        {
+          "path": "packages/cli/src/commands/config/set.ts",
+          "kind": "import-statement",
+          "original": "./config/set.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/debug/doctor.ts": {
+      "bytes": 7762,
+      "imports": [
+        {
+          "path": "node:fs",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:os",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/debug/log.ts": {
+      "bytes": 2433,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/debug/monitor.ts": {
+      "bytes": 4640,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/debug.ts": {
+      "bytes": 648,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/commands/debug/doctor.ts",
+          "kind": "import-statement",
+          "original": "./debug/doctor.js"
+        },
+        {
+          "path": "packages/cli/src/commands/debug/log.ts",
+          "kind": "import-statement",
+          "original": "./debug/log.js"
+        },
+        {
+          "path": "packages/cli/src/commands/debug/monitor.ts",
+          "kind": "import-statement",
+          "original": "./debug/monitor.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/extension/disable.ts": {
+      "bytes": 2815,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../../utils/errors.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/extension/enable.ts": {
+      "bytes": 2727,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../../utils/errors.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/extensions/ExtensionDeveloper.ts": {
+      "bytes": 14012,
+      "imports": [
+        {
+          "path": "node:fs/promises",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../utils/errors.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/extensions/ExtensionLoader.ts": {
+      "bytes": 10183,
+      "imports": [
+        {
+          "path": "node:fs/promises",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:url",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../utils/errors.js"
+        },
+        {
+          "path": "@freedom/cli",
+          "kind": "require-resolve",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/extensions/ExtensionManager.ts": {
+      "bytes": 10551,
+      "imports": [
+        {
+          "path": "node:fs/promises",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../utils/errors.js"
+        },
+        {
+          "path": "packages/cli/src/extensions/ExtensionLoader.ts",
+          "kind": "import-statement",
+          "original": "./ExtensionLoader.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/extensions/index.ts": {
+      "bytes": 369,
+      "imports": [
+        {
+          "path": "packages/cli/src/extensions/ExtensionDeveloper.ts",
+          "kind": "import-statement",
+          "original": "./ExtensionDeveloper.js"
+        },
+        {
+          "path": "packages/cli/src/extensions/ExtensionLoader.ts",
+          "kind": "import-statement",
+          "original": "./ExtensionLoader.js"
+        },
+        {
+          "path": "packages/cli/src/extensions/ExtensionManager.ts",
+          "kind": "import-statement",
+          "original": "./ExtensionManager.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/extension/install.ts": {
+      "bytes": 4936,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/config/config.ts",
+          "kind": "import-statement",
+          "original": "../../config/config.js"
+        },
+        {
+          "path": "packages/cli/src/extensions/index.ts",
+          "kind": "import-statement",
+          "original": "../../extensions/index.js"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../../utils/errors.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/extension/list.ts": {
+      "bytes": 3146,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/extension/uninstall.ts": {
+      "bytes": 3487,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../../utils/errors.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/extension.ts": {
+      "bytes": 855,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/commands/extension/disable.ts",
+          "kind": "import-statement",
+          "original": "./extension/disable.js"
+        },
+        {
+          "path": "packages/cli/src/commands/extension/enable.ts",
+          "kind": "import-statement",
+          "original": "./extension/enable.js"
+        },
+        {
+          "path": "packages/cli/src/commands/extension/install.ts",
+          "kind": "import-statement",
+          "original": "./extension/install.js"
+        },
+        {
+          "path": "packages/cli/src/commands/extension/list.ts",
+          "kind": "import-statement",
+          "original": "./extension/list.js"
+        },
+        {
+          "path": "packages/cli/src/commands/extension/uninstall.ts",
+          "kind": "import-statement",
+          "original": "./extension/uninstall.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/game/restart.ts": {
+      "bytes": 2240,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../../utils/errors.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/game/start.ts": {
+      "bytes": 2215,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/config/config.ts",
+          "kind": "import-statement",
+          "original": "../../config/config.js"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../../utils/errors.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/game/status.ts": {
+      "bytes": 2613,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../../utils/errors.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/game/stop.ts": {
+      "bytes": 1574,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../../utils/errors.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/game.ts": {
+      "bytes": 726,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/commands/game/restart.ts",
+          "kind": "import-statement",
+          "original": "./game/restart.js"
+        },
+        {
+          "path": "packages/cli/src/commands/game/start.ts",
+          "kind": "import-statement",
+          "original": "./game/start.js"
+        },
+        {
+          "path": "packages/cli/src/commands/game/status.ts",
+          "kind": "import-statement",
+          "original": "./game/status.js"
+        },
+        {
+          "path": "packages/cli/src/commands/game/stop.ts",
+          "kind": "import-statement",
+          "original": "./game/stop.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/script/create.ts": {
+      "bytes": 2094,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../../utils/errors.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/script/delete.ts": {
+      "bytes": 2292,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../../utils/errors.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/script/edit.ts": {
+      "bytes": 1718,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../../utils/errors.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/script/list.ts": {
+      "bytes": 1394,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/script/run.ts": {
+      "bytes": 2203,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "../../utils/errors.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/commands/script.ts": {
+      "bytes": 800,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "packages/cli/src/commands/script/create.ts",
+          "kind": "import-statement",
+          "original": "./script/create.js"
+        },
+        {
+          "path": "packages/cli/src/commands/script/delete.ts",
+          "kind": "import-statement",
+          "original": "./script/delete.js"
+        },
+        {
+          "path": "packages/cli/src/commands/script/edit.ts",
+          "kind": "import-statement",
+          "original": "./script/edit.js"
+        },
+        {
+          "path": "packages/cli/src/commands/script/list.ts",
+          "kind": "import-statement",
+          "original": "./script/list.js"
+        },
+        {
+          "path": "packages/cli/src/commands/script/run.ts",
+          "kind": "import-statement",
+          "original": "./script/run.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/shared/src/types/config.ts": {
+      "bytes": 1958,
+      "imports": [],
+      "format": "esm"
+    },
+    "packages/shared/src/index.ts": {
+      "bytes": 554,
+      "imports": [
+        {
+          "path": "packages/shared/src/types/config.ts",
+          "kind": "import-statement",
+          "original": "./types/config.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/interactive.ts": {
+      "bytes": 9302,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:readline",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "packages/shared/src/index.ts",
+          "kind": "import-statement",
+          "original": "@freedom/shared"
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "playwright",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/main.ts": {
+      "bytes": 2884,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js",
+          "kind": "import-statement",
+          "original": "chalk"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/index.mjs",
+          "kind": "import-statement",
+          "original": "yargs"
+        },
+        {
+          "path": "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/helpers/helpers.mjs",
+          "kind": "import-statement",
+          "original": "yargs/helpers"
+        },
+        {
+          "path": "packages/cli/src/commands/config.ts",
+          "kind": "import-statement",
+          "original": "./commands/config.js"
+        },
+        {
+          "path": "packages/cli/src/commands/debug.ts",
+          "kind": "import-statement",
+          "original": "./commands/debug.js"
+        },
+        {
+          "path": "packages/cli/src/commands/extension.ts",
+          "kind": "import-statement",
+          "original": "./commands/extension.js"
+        },
+        {
+          "path": "packages/cli/src/commands/game.ts",
+          "kind": "import-statement",
+          "original": "./commands/game.js"
+        },
+        {
+          "path": "packages/cli/src/commands/script.ts",
+          "kind": "import-statement",
+          "original": "./commands/script.js"
+        },
+        {
+          "path": "packages/cli/src/interactive.ts",
+          "kind": "import-statement",
+          "original": "./interactive.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "packages/cli/src/index.ts": {
+      "bytes": 1091,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "packages/cli/src/main.ts",
+          "kind": "import-statement",
+          "original": "./main.js"
+        },
+        {
+          "path": "packages/cli/src/utils/errors.ts",
+          "kind": "import-statement",
+          "original": "./utils/errors.js"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "bundle/freedom.cjs": {
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:os",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:tty",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "assert",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "url",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:os",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:os",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:fs/promises",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:fs/promises",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:url",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "@freedom/cli",
+          "kind": "require-resolve",
+          "external": true
+        },
+        {
+          "path": "node:fs/promises",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:readline",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "playwright",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "packages/cli/src/index.ts",
+      "inputs": {
+        "packages/cli/src/index.ts": {
+          "bytesInOutput": 675
+        },
+        "packages/cli/src/main.ts": {
+          "bytesInOutput": 2957
+        },
+        "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/vendor/ansi-styles/index.js": {
+          "bytesInOutput": 2488
+        },
+        "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/vendor/supports-color/index.js": {
+          "bytesInOutput": 2025
+        },
+        "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/utilities.js": {
+          "bytesInOutput": 323
+        },
+        "node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js": {
+          "bytesInOutput": 2083
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/lib/platform-shims/esm.mjs": {
+          "bytesInOutput": 1116
+        },
+        "node_modules/.pnpm/cliui@8.0.1/node_modules/cliui/build/lib/index.js": {
+          "bytesInOutput": 3352
+        },
+        "node_modules/.pnpm/cliui@8.0.1/node_modules/cliui/build/lib/string-utils.js": {
+          "bytesInOutput": 315
+        },
+        "node_modules/.pnpm/cliui@8.0.1/node_modules/cliui/index.mjs": {
+          "bytesInOutput": 80
+        },
+        "node_modules/.pnpm/escalade@3.2.0/node_modules/escalade/sync/index.mjs": {
+          "bytesInOutput": 248
+        },
+        "node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/index.js": {
+          "bytesInOutput": 1070
+        },
+        "node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/string-utils.js": {
+          "bytesInOutput": 635
+        },
+        "node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/tokenize-arg-string.js": {
+          "bytesInOutput": 283
+        },
+        "node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/yargs-parser-types.js": {
+          "bytesInOutput": 107
+        },
+        "node_modules/.pnpm/yargs-parser@21.1.1/node_modules/yargs-parser/build/lib/yargs-parser.js": {
+          "bytesInOutput": 13161
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/process-argv.js": {
+          "bytesInOutput": 203
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/yerror.js": {
+          "bytesInOutput": 145
+        },
+        "node_modules/.pnpm/y18n@5.0.8/node_modules/y18n/build/lib/platform-shims/node.js": {
+          "bytesInOutput": 223
+        },
+        "node_modules/.pnpm/y18n@5.0.8/node_modules/y18n/build/lib/index.js": {
+          "bytesInOutput": 2792
+        },
+        "node_modules/.pnpm/y18n@5.0.8/node_modules/y18n/index.mjs": {
+          "bytesInOutput": 25
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/typings/common-types.js": {
+          "bytesInOutput": 146
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/is-promise.js": {
+          "bytesInOutput": 61
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/parse-command.js": {
+          "bytesInOutput": 446
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/argsert.js": {
+          "bytesInOutput": 1001
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/middleware.js": {
+          "bytesInOutput": 1382
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/maybe-async-result.js": {
+          "bytesInOutput": 152
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/which-module.js": {
+          "bytesInOutput": 167
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/command.js": {
+          "bytesInOutput": 8014
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/obj-filter.js": {
+          "bytesInOutput": 88
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/set-blocking.js": {
+          "bytesInOutput": 176
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/usage.js": {
+          "bytesInOutput": 7885
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/completion-templates.js": {
+          "bytesInOutput": 1386
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/completion.js": {
+          "bytesInOutput": 4508
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/levenshtein.js": {
+          "bytesInOutput": 451
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/validation.js": {
+          "bytesInOutput": 5191
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/utils/apply-extends.js": {
+          "bytesInOutput": 762
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/build/lib/yargs-factory.js": {
+          "bytesInOutput": 28202
+        },
+        "node_modules/.pnpm/yargs@17.7.2/node_modules/yargs/index.mjs": {
+          "bytesInOutput": 20
+        },
+        "packages/cli/src/commands/config/get.ts": {
+          "bytesInOutput": 1108
+        },
+        "packages/cli/src/config/config.ts": {
+          "bytesInOutput": 2986
+        },
+        "packages/cli/src/utils/errors.ts": {
+          "bytesInOutput": 452
+        },
+        "packages/cli/src/config/defaults.ts": {
+          "bytesInOutput": 1205
+        },
+        "packages/cli/src/config/validation.ts": {
+          "bytesInOutput": 2320
+        },
+        "packages/cli/src/commands/config/list.ts": {
+          "bytesInOutput": 1658
+        },
+        "packages/cli/src/commands/config/reset.ts": {
+          "bytesInOutput": 1746
+        },
+        "packages/cli/src/commands/config/set.ts": {
+          "bytesInOutput": 1449
+        },
+        "packages/cli/src/commands/config.ts": {
+          "bytesInOutput": 224
+        },
+        "packages/cli/src/commands/debug/doctor.ts": {
+          "bytesInOutput": 4483
+        },
+        "packages/cli/src/commands/debug/log.ts": {
+          "bytesInOutput": 1244
+        },
+        "packages/cli/src/commands/debug/monitor.ts": {
+          "bytesInOutput": 2740
+        },
+        "packages/cli/src/commands/debug.ts": {
+          "bytesInOutput": 207
+        },
+        "packages/cli/src/commands/extension/disable.ts": {
+          "bytesInOutput": 1310
+        },
+        "packages/cli/src/commands/extension/enable.ts": {
+          "bytesInOutput": 1063
+        },
+        "packages/cli/src/commands/extension/install.ts": {
+          "bytesInOutput": 2455
+        },
+        "packages/cli/src/extensions/ExtensionDeveloper.ts": {
+          "bytesInOutput": 96
+        },
+        "packages/cli/src/extensions/index.ts": {
+          "bytesInOutput": 0
+        },
+        "packages/cli/src/extensions/ExtensionLoader.ts": {
+          "bytesInOutput": 4499
+        },
+        "packages/cli/src/extensions/ExtensionManager.ts": {
+          "bytesInOutput": 5292
+        },
+        "packages/cli/src/commands/extension/list.ts": {
+          "bytesInOutput": 1795
+        },
+        "packages/cli/src/commands/extension/uninstall.ts": {
+          "bytesInOutput": 1394
+        },
+        "packages/cli/src/commands/extension.ts": {
+          "bytesInOutput": 239
+        },
+        "packages/cli/src/commands/game/restart.ts": {
+          "bytesInOutput": 1204
+        },
+        "packages/cli/src/commands/game/start.ts": {
+          "bytesInOutput": 1251
+        },
+        "packages/cli/src/commands/game/status.ts": {
+          "bytesInOutput": 1407
+        },
+        "packages/cli/src/commands/game/stop.ts": {
+          "bytesInOutput": 845
+        },
+        "packages/cli/src/commands/game.ts": {
+          "bytesInOutput": 222
+        },
+        "packages/cli/src/commands/script/create.ts": {
+          "bytesInOutput": 1056
+        },
+        "packages/cli/src/commands/script/delete.ts": {
+          "bytesInOutput": 843
+        },
+        "packages/cli/src/commands/script/edit.ts": {
+          "bytesInOutput": 746
+        },
+        "packages/cli/src/commands/script/list.ts": {
+          "bytesInOutput": 764
+        },
+        "packages/cli/src/commands/script/run.ts": {
+          "bytesInOutput": 1055
+        },
+        "packages/cli/src/commands/script.ts": {
+          "bytesInOutput": 232
+        },
+        "packages/cli/src/interactive.ts": {
+          "bytesInOutput": 6456
+        },
+        "packages/shared/src/index.ts": {
+          "bytesInOutput": 123
+        }
+      },
+      "bytes": 151675
+    }
+  }
+}

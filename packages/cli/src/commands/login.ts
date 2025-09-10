@@ -1,13 +1,31 @@
-import type { LoginCredentials } from '@freedom/core'
+// import type { LoginCredentials } from '@freedom/core'
 import type { Browser, Page } from 'playwright'
 
 import process from 'node:process'
 import * as readline from 'node:readline'
-import { LoginAutomator } from '@freedom/core'
+// import { LoginAutomator } from '@freedom/core'
 
 import { globalStateManager } from '@freedom/shared'
 import { Command } from 'commander'
 import { chromium } from 'playwright'
+
+// Temporary type definitions until @freedom/core is fully implemented
+interface LoginCredentials {
+  username: string
+  password: string
+}
+
+// Temporary placeholder until @freedom/core is fully implemented
+class LoginAutomator {
+  constructor(_page: any, _config: any) {}
+  on(_event: string, _handler: (...args: any[]) => void) {}
+  getProgress(): number { return 0 }
+  async login(_credentials: LoginCredentials, _callback?: (progress: any) => void): Promise<any> {
+    return { success: false, message: 'Core not implemented yet', duration: 0 }
+  }
+
+  async dispose() {}
+}
 
 export interface LoginCommandOptions {
   url?: string
@@ -66,7 +84,7 @@ export async function executeLogin(options: LoginCommandOptions): Promise<void> 
 
     // 执行登录
     console.log('🔐 开始自动登录...')
-    const result = await loginAutomator.login(credentials, (progress) => {
+    const result = await loginAutomator.login(credentials, (progress: any) => {
       const progressBar = '='.repeat(Math.floor(progress.progress / 5))
       const emptyBar = '-'.repeat(20 - Math.floor(progress.progress / 5))
       console.log(`[${progressBar}${emptyBar}] ${progress.progress.toFixed(1)}% - ${progress.message}`)
