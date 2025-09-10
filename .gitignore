@@ -7,3 +7,5 @@ dist
 dist/**
 build/**
 .next/**
+
+.gemini-cli/
