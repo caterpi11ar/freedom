@@ -1,13 +1,3 @@
 {
-  "extends": "./tsconfig.base.json",
-  "references": [
-    { "path": "./packages/shared" },
-    { "path": "./packages/logger" },
-    { "path": "./packages/storage" },
-    { "path": "./packages/executor" },
-    { "path": "./packages/core" },
-    { "path": "./packages/webhook" },
-    { "path": "./packages/api" },
-    { "path": "./packages/cli" }
-  ]
+  "extends": "./tsconfig.base.json"
 }

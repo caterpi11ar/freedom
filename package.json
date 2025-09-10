@@ -35,8 +35,11 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "dev": "pnpm -r --parallel --filter='./packages/*' run dev",
+    "dev": "pnpm --filter='@freedom/cli' run dev",
+    "dev:core": "pnpm --filter='@freedom/core' run dev",
+    "dev:all": "pnpm -r --parallel --filter='./packages/*' run dev",
     "build": "pnpm -r --filter='./packages/*' run build",
+    "lint": "eslint ./packages/**/*.{js,jsx,ts,tsx,mjs,cjs}",
     "lint:fix": "eslint ./packages/**/*.{js,jsx,ts,tsx,mjs,cjs} --fix",
     "typecheck": "tsc --noEmit",
     "test": "vitest",

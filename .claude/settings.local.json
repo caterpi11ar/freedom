@@ -14,7 +14,8 @@
       "Bash(pnpm dev:*)",
       "Bash(pnpm typecheck:*)",
       "Bash(npx tsc:*)",
-      "Bash(pnpm lint:*)"
+      "Bash(pnpm lint:*)",
+      "Bash(grep:*)"
     ],
     "deny": [],
     "ask": []
