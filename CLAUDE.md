@@ -86,6 +86,13 @@ Centralized in `@freedom/shared` with:
   - Existing .js files should be gradually migrated to TypeScript
   - Ensure all code has complete type definitions
 
+### CLI Command Design
+- **Single-level commands without parameters**:
+  - Commands should be simple, single words without arguments or nested subcommands
+  - Parameters and complex inputs should be handled through interactive prompts after command entry
+  - Allow secondary interactions like follow-up questions, selection menus, or additional input prompts
+  - Example: `/login` command should prompt for credentials interactively rather than accepting them as parameters
+
 ## Key Implementation Details
 
 **CLI Command System**:

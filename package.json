@@ -1,19 +1,19 @@
 {
   "type": "module",
   "private": true,
-  "description": "一个云原神自动化工具，基于 Puppeteer 实现自动化操作，支持游戏脚本执行功能，提升游戏体验和自动化效率。",
+  "description": "一款开源原神自动化工具，将 Freedom 的强大功能直接引入您的终端，提升游戏体验和自动化效率。",
   "author": {
-    "name": "Your Name",
-    "email": "your.email@example.com"
+    "name": "caterpi11ar",
+    "email": "daiqin1046@gmail.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/your-username/freedom#readme",
+  "homepage": "https://github.com/caterpi11ar/freedom#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/freedom.git"
+    "url": "https://github.com/caterpi11ar/freedom.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/freedom/issues"
+    "url": "https://github.com/caterpi11ar/freedom/issues"
   },
   "keywords": [
     "genshin",
@@ -21,7 +21,7 @@
     "automatic",
     "auto-play-game",
     "typescript",
-    "puppeteer",
+    "playwright",
     "cloud gaming",
     "monorepo",
     "原神",
@@ -35,26 +35,34 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "dev": "pnpm --filter='@freedom/cli' run dev",
+    "dev": "pnpm -C packages/cli run dev",
     "dev:core": "pnpm --filter='@freedom/core' run dev",
     "dev:all": "pnpm -r --parallel --filter='./packages/*' run dev",
-    "build": "pnpm -r --filter='./packages/*' run build",
+    "build": "node scripts/build.js",
+    "bundle": "node scripts/bundle.js",
+    "build:packages": "pnpm -r --filter='@freedom/*' run build",
+    "build:watch": "node esbuild.config.js --watch",
     "lint": "eslint ./packages/**/*.{js,jsx,ts,tsx,mjs,cjs}",
-    "lint:fix": "eslint ./packages/**/*.{js,jsx,ts,tsx,mjs,cjs} --fix",
+    "lint:fix": "eslint packages --fix",
     "typecheck": "tsc --noEmit",
     "test": "vitest",
     "test:ci": "vitest run",
+    "quality": "node scripts/quality-check.js",
     "prepare": "husky"
+  },
+  "dependencies": {
+    "esbuild": "^0.25.9",
+    "playwright": "^1.55.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^5.3.0",
     "@commitlint/cli": "^18.6.1",
     "@commitlint/config-conventional": "^18.6.3",
     "@types/node": "22.13.0",
+    "@vitest/coverage-v8": "^1.6.1",
     "eslint": "^9.32.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.2",
-    "puppeteer": "^24.2.0",
     "rimraf": "^5.0.10",
     "tsx": "^4.20.3",
     "typescript": "^5.9.2",

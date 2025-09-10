@@ -15,7 +15,17 @@
       "Bash(pnpm typecheck:*)",
       "Bash(npx tsc:*)",
       "Bash(pnpm lint:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(pnpm:*)",
+      "Bash(tsx:*)",
+      "Read(//d/**)",
+      "Bash(npx vitest run:*)",
+      "Bash(npx tsx:*)",
+      "Bash(timeout 5 npx tsx packages/cli/src/index.ts)",
+      "Bash(timeout 10 npx tsx packages/cli/src/index.ts)",
+      "Bash(timeout 15 npx tsx packages/cli/src/index.ts)",
+      "Bash(timeout 15 npx tsx packages/cli/src/index.ts --help)",
+      "Bash(timeout 15 npx tsx packages/cli/src/index.ts game --help)"
     ],
     "deny": [],
     "ask": []

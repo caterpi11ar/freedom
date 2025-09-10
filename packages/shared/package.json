@@ -1,0 +1,30 @@
+{
+  "name": "@freedom/shared",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Freedom Shared - Shared utilities and state management",
+  "author": "Freedom Team",
+  "license": "MIT",
+  "keywords": [
+    "freedom",
+    "shared",
+    "utilities",
+    "typescript"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --fix"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  }
+}

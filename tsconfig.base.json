@@ -20,7 +20,8 @@
       "@freedom/core": ["./packages/core/src/index.ts"],
       "@freedom/webhook": ["./packages/webhook/src/index.ts"],
       "@freedom/api": ["./packages/api/src/index.ts"],
-      "@freedom/cli": ["./packages/cli/src/index.ts"]
+      "@freedom/cli": ["./packages/cli/src/index.ts"],
+      "@freedom/test-utils": ["./packages/test-utils/src/index.ts"]
     },
     "strict": true,
     "noFallthroughCasesInSwitch": true,

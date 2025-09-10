@@ -1,0 +1,35 @@
+{
+  "name": "@freedom/test-utils",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Freedom Test Utils - Testing utilities for Freedom automation tool",
+  "author": "Freedom Team",
+  "license": "MIT",
+  "keywords": [
+    "freedom",
+    "test-utils",
+    "testing",
+    "playwright",
+    "typescript"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --fix"
+  },
+  "dependencies": {
+    "@freedom/core": "workspace:*",
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  }
+}

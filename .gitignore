@@ -8,4 +8,4 @@ dist/**
 build/**
 .next/**
 
-.gemini-cli/
+gemini-cli/

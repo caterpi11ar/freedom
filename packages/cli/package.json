@@ -1,0 +1,41 @@
+{
+  "name": "@freedom/cli",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Freedom CLI - Command line interface for Freedom automation tool",
+  "author": "Freedom Team",
+  "license": "MIT",
+  "keywords": [
+    "freedom",
+    "cli",
+    "automation",
+    "genshin",
+    "typescript"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "freedom": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --fix"
+  },
+  "dependencies": {
+    "@freedom/shared": "workspace:*",
+    "chalk": "^5.3.0",
+    "ora": "^8.0.1",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.0",
+    "@types/yargs": "^17.0.32",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  }
+}
