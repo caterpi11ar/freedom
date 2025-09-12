@@ -2,8 +2,8 @@ import type { CommandModule } from 'yargs'
 
 // 列出配置命令
 import process from 'node:process'
+import { getAllConfigValues } from '@freedom/shared/config'
 import chalk from 'chalk'
-import { getAllConfigValues } from '../../config/config.js'
 
 export const listCommand: CommandModule = {
   command: 'list',

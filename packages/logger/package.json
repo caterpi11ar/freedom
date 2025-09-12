@@ -1,0 +1,26 @@
+{
+  "name": "@freedom/logger",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Comprehensive logging infrastructure for Freedom automation framework",
+  "keywords": [
+    "logging",
+    "logger",
+    "automation",
+    "typescript"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "dev": "tsc --watch",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.0"
+  }
+}

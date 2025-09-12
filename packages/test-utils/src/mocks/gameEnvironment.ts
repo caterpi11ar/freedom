@@ -42,7 +42,7 @@ export class MockGameEnvironment {
         await new Promise(resolve => setTimeout(resolve, 50))
       }),
 
-      screenshot: vi.fn(async (_options?: any) => {
+      screenshot: vi.fn(async (_options?: Record<string, any>) => {
         return Buffer.from('mock-screenshot-data')
       }),
 

@@ -1,8 +1,7 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "composite": true,
-    "tsBuildInfoFile": "./dist/.tsbuildinfo",
+    "types": ["vitest/globals", "node"],
     "outDir": "./dist"
   },
   "references": [

@@ -80,7 +80,7 @@ export class TestUtilities {
   /**
    * 创建模拟配置
    */
-  static createMockConfig(overrides: any = {}) {
+  static createMockConfig(overrides: Record<string, any> = {}) {
     return {
       game: {
         url: 'https://test.example.com/',
@@ -169,7 +169,7 @@ export class TestUtilities {
   /**
    * 验证命令模块结构
    */
-  static validateCommandModule(command: any): boolean {
+  static validateCommandModule(command: Record<string, any>): boolean {
     return (
       typeof command === 'object'
       && typeof command.command === 'string'

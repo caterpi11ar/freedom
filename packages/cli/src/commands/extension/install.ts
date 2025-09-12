@@ -3,8 +3,8 @@ import type { CommandModule } from 'yargs'
 import type { ExtensionContext } from '../../extensions/index.js'
 // 安装扩展命令
 import process from 'node:process'
+import { getAllConfigValues } from '@freedom/shared/config'
 import chalk from 'chalk'
-import { getAllConfigValues } from '../../config/config.js'
 import { ExtensionManager } from '../../extensions/index.js'
 import { GameAutomationError } from '../../utils/errors.js'
 

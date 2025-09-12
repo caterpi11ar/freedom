@@ -1,7 +1,7 @@
 // 启动游戏会话命令
 import type { CommandModule } from 'yargs'
+import { getConfigValue } from '@freedom/shared/config'
 import chalk from 'chalk'
-import { getConfigValue } from '../../config/config.js'
 import { GameAutomationError } from '../../utils/errors.js'
 
 export const startCommand: CommandModule = {

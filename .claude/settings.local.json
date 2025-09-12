@@ -25,7 +25,12 @@
       "Bash(timeout 10 npx tsx packages/cli/src/index.ts)",
       "Bash(timeout 15 npx tsx packages/cli/src/index.ts)",
       "Bash(timeout 15 npx tsx packages/cli/src/index.ts --help)",
-      "Bash(timeout 15 npx tsx packages/cli/src/index.ts game --help)"
+      "Bash(timeout 15 npx tsx packages/cli/src/index.ts game --help)",
+      "Bash(while read file)",
+      "Bash(do echo \"=== $file ===\")",
+      "Bash(done)",
+      "Bash(timeout 15 npx tsx packages/cli/src/main.ts --help)",
+      "Bash(test:*)"
     ],
     "deny": [],
     "ask": []

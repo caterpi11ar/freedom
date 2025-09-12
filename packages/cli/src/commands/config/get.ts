@@ -1,8 +1,8 @@
 // 获取配置值命令
 import type { CommandModule } from 'yargs'
 import process from 'node:process'
+import { getConfigValue } from '@freedom/shared/config'
 import chalk from 'chalk'
-import { getConfigValue } from '../../config/config.js'
 import { ConfigurationError } from '../../utils/errors.js'
 
 export const getCommand: CommandModule = {
