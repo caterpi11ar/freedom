@@ -13,7 +13,7 @@ export class AccountsManager extends BaseConfigManager<AccountsConfig> {
     this.userAccounts = new Conf({
       projectName: 'freedom',
       configName: 'accounts',
-      schema: AccountsSchema,
+      // Remove schema validation here, use Zod validation in validate() method instead
     })
   }
 

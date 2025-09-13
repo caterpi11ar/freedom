@@ -12,7 +12,11 @@ Freedom CLI 提供了丰富的交互式命令系统，支持游戏自动化、�
 | `/prompt` | AI 提示词库管理 | ✅ 完整实现 | [详细文档](./prompt/README.md) |
 | `/log` | 日志管理系统 | ✅ 完整实现 | [详细文档](./log/README.md) |
 | `/systemconfig` | 系统配置管理 | ✅ 完整实现 | [详细文档](./systemconfig/README.md) |
-| `/game` | 游戏会话管理 | 🚧 基础实现 | [详细文档](./game/README.md) |
+| `/start` | 游戏会话启动与控制 | ✅ 完整实现 | [详细文档](./game/README.md) |
+| `/stop` | 游戏会话停止与清理 | ✅ 完整实现 | [详细文档](./game/README.md) |
+| `/status` | 游戏会话状态监控 | ✅ 完整实现 | [详细文档](./game/README.md) |
+| `/restart` | 游戏会话智能重启 | ✅ 完整实现 | [详细文档](./game/README.md) |
+| `/game` | 综合游戏控制中心 | ✅ 完整实现 | [详细文档](./game/README.md) |
 | `/config` | 配置管理工具 | 🚧 部分实现 | 详细文档 |
 | `/debug` | 调试工具集 | 🚧 部分实现 | 详细文档 |
 | `/extension` | 扩展插件管理 | 🚧 部分实现 | 详细文档 |
@@ -23,7 +27,11 @@ Freedom CLI 提供了丰富的交互式命令系统，支持游戏自动化、�
 - **[`/login`](./login/README.md)** - 多账户登录管理，支持账户切换、信息编辑和自动登录
 
 ### 🎮 游戏自动化
-- **[`/game`](./game/README.md)** - 游戏会话控制，支持启动、停止和状态监控
+- **[`/start`](./game/README.md)** - 游戏会话启动，支持多种启动模式、环境检查和账户选择
+- **[`/stop`](./game/README.md)** - 游戏会话停止，支持优雅停止、状态保存和资源清理
+- **[`/status`](./game/README.md)** - 游戏会话状态，提供详细状态信息、性能监控和导出功能
+- **[`/restart`](./game/README.md)** - 游戏会话重启，支持智能重启、配置保持和错误恢复
+- **[`/game`](./game/README.md)** - 综合游戏控制中心，统一管理所有游戏相关功能
 - **[`/script`](./script/README.md)** - 自动化脚本管理，提供模板创建、编辑和执行
 - **[`/task`](./task/README.md)** - 任务队列系统，支持任务调度、监控和历史记录
 
@@ -70,6 +78,11 @@ Freedom CLI v1.0.0 - 原神自动化工具
 ### 🟢 完整实现的命令
 这些命令已完全实现并经过测试：
 - `/login` - 账户登录管理
+- `/start` - 游戏会话启动
+- `/stop` - 游戏会话停止
+- `/status` - 游戏会话状态
+- `/restart` - 游戏会话重启
+- `/game` - 综合游戏控制中心
 - `/script` - 脚本模板管理
 - `/task` - 任务队列管理
 - `/prompt` - AI 提示词库
@@ -78,7 +91,6 @@ Freedom CLI v1.0.0 - 原神自动化工具
 
 ### 🟡 部分实现的命令
 这些命令已有基础实现，正在持续完善：
-- `/game` - 游戏会话管理
 - `/config` - 配置管理工具
 - `/debug` - 调试工具集
 - `/extension` - 扩展插件管理

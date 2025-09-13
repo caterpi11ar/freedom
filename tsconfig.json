@@ -6,5 +6,8 @@
     { "path": "./packages/cli" },
     { "path": "./packages/logger" },
     { "path": "./packages/test-utils" }
-  ]
+  ],
+  "files": [],
+  "include": [],
+  "exclude": ["**/dist", "**/node_modules"]
 }

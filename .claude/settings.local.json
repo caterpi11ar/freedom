@@ -30,7 +30,8 @@
       "Bash(do echo \"=== $file ===\")",
       "Bash(done)",
       "Bash(timeout 15 npx tsx packages/cli/src/main.ts --help)",
-      "Bash(test:*)"
+      "Bash(test:*)",
+      "Bash(timeout 5 pnpm dev:*)"
     ],
     "deny": [],
     "ask": []
